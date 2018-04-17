@@ -1,0 +1,181 @@
+h2 {
+	font-size: 3.5em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+p { /*for column width and paragraphs*/
+	width: 50%;
+	line-height: 1.5em;
+}
+
+
+body {
+	background-color: #f3e6ff;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Class styles*/
+
+.main-header {
+	color: #ffdd1a;
+	font-family: Palace Script MT ,bold;
+	font-size: 20.625rem;
+	background-image: url("../Images/splash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 420px;
+	text-align: center;
+}
+
+.bgb { /*for border on background image*/
+	background-image: url("../Images/splash.jpg");
+	border-top: 10px solid #ffdd1a;
+}
+
+.regal {
+		margin-right: auto;
+		font-family: Palace Script MT;
+		font-size: 1.8em;
+	}
+
+.main { /*for body*/
+	width: 70%;
+	padding-left: 250px;
+/*	min-height: 200vh;*/
+}
+
+.blue { /*for about content*/
+	display: inline-flex;
+	flex: 1;
+}
+
+.container { /*for nav tab*/
+	display: inline-flex;
+	flex: auto;
+	position: fixed;
+	width: 100%;
+	height: 0;
+}
+.main-nav li{
+	color: #990099;
+	list-style-type: none;
+	text-decoration: solid white; 
+	display: inline-flex;
+	justify-content: flex-start;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-style: bold;
+}
+
+.coco { /*for regal attire image*/ 
+	width: 300px;
+	height: 300px;
+}
+
+.art { /*Our works images*/
+	width: 290px;
+	height: 290px;
+	border: 2.5px solid #ffdd1a;
+}
+/*Meet the team content*/
+.team {
+	display: flex;
+}
+
+.teams {
+	width: 350px;
+	height: 350px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+/*Our mission content*/
+
+.mission {
+	width: 330px;
+	height: 330px;
+	display: flex;
+	//justify-content: flex-end;
+	flex-direction: row;
+	align-items: flex-end;
+
+	padding-top: 20px;
+	padding-right: 100px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin-bottom: -200px;
+	
+}
+
+.support {
+		width: 330px;
+	height: 330px;
+	
+	padding-top: 20px;
+	padding-right: 100px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	//margin-bottom: -200px;
+}
+.anime {
+	
+	width: 330px;
+	height: 350px;
+	padding-top: 20px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin-left: 700px;
+	margin-top:-130px; 
+
+}
+/*Footer content*/
+.foot {
+	background-color: #a3a3c2;
+}
+
+.social {
+	width: 40px;
+	height: 40px;
+	display: inline-flex;
+	background-color: #a3a3c2;
+
+}
+/*Pseudo classes*/
+.container:target {
+	background-color: #ff99ff;
+	color: #ffd900;
+}
+
+/*Media Queries*/
+
+@media (max-width: 769px;) {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.regal {
+		margin-right: auto;
+		font-family: Palace Script MT ,bold;
+	}
+	
+	.main-header {
+	color: #ffdd1a;
+	font-family: Palace Script MT ,bold;
+	font-size: 4.625rem;
+	background-image: url("../Images/splash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 120px;
+	text-align: center;
+	}
+
+	.main-nav {
+		flex-direction: column;
+	}
+}
